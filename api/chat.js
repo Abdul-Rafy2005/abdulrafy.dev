@@ -1,8 +1,6 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const CONTEXT = require('./context');
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -14,12 +12,19 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: 'Message is required' });
   }
 
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    console.error('GEMINI_API_KEY is not set');
+    return res.status(500).json({ error: 'Chat service is not configured. Please try again later.' });
+  }
+
   try {
+    const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
-    const systemPrompt = `You are a helpful AI assistant on Abdul Rafy's personal portfolio website. 
-Answer questions about Abdul Rafy, his skills, projects, and experience based on the following context. 
-Keep answers concise, friendly, and professional. If you don't know something based on the context, 
+    const systemPrompt = `You are a helpful AI assistant on Abdul Rafy's personal portfolio website.
+Answer questions about Abdul Rafy, his skills, projects, and experience based on the following context.
+Keep answers concise, friendly, and professional. If you don't know something based on the context,
 say so honestly. Do not make up information.
 
 --- CONTEXT ---
