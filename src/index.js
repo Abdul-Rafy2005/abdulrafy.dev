@@ -1,7 +1,7 @@
 import './sass/main.scss';
 import canvasDots from './heroCanvas.js';
 import canvasDotsBg from './bgCanvas.js';
-import { doc } from 'prettier';
+import './chat-widget.js';
 
 window.onload = function () {
   canvasDotsBg();
