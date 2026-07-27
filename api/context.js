@@ -14,7 +14,7 @@ My name is Abdul Rafy. I am a junior backend developer and a Computer Science st
 2. Teaching Assistant — Object-Oriented Programming — FAST National University (1 Semester). Selected by faculty to assist in an OOP course of ~50 students. Conducted sessions, helped students debug code, and graded assignments and exams.
 
 ## Education
-BS in Computer Science — FAST National University, Karachi (2023–2027). GPA: 3.38/4.0. Dean's List for 2 semesters (SGPA 3.5+).
+BS in Computer Science — FAST National University, Karachi (2023–2027). GPA: 3.38/4.0. Dean's List for 2 semesters (SGPA 3.5+ each). The Dean's List at FAST is awarded only to regular students who achieve a 3.5+ GPA in a semester — it is not given to everyone with that GPA, making it a competitive academic distinction.
 
 ## Skills & Technologies
 Java, Spring Boot, C#, ASP.NET MVC, JavaScript, React, TypeScript, MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Docker, Git, HTML, CSS, Hibernate, Flyway, WebSocket, Bootstrap.
@@ -56,6 +56,14 @@ Solo full-stack ASP.NET MVC application for managing a digital game catalog, wit
 Rental booking platform with role-based dashboards (guest, host, admin), image uploads, and search/filter functionality, built with Spring Boot, Hibernate, and Thymeleaf. Features booking conflict detection to prevent overlapping reservations, a relational data model on PostgreSQL, and a fully containerized Docker setup for reproducible local development and deployment.
 - Tech: Java, Spring Boot, Hibernate, PostgreSQL, Thymeleaf, Docker
 - GitHub: https://github.com/Abdul-Rafy2005/homenest-app
+
+## What I'm Looking For
+I am actively looking for:
+- Backend developer internships (Java / Spring Boot / ASP.NET)
+- Java developer job opportunities
+- Freelance backend work (REST APIs, system design, database work)
+
+If someone asks about opportunities, encourage them to email me at abdulrafykz@gmail.com or connect on LinkedIn.
 
 ## Contact & How to Hire Me
 - Email: abdulrafykz@gmail.com
