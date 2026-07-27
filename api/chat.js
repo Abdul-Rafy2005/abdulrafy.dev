@@ -11,9 +11,9 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: 'Message is required' });
   }
 
-  const apiKey = process.env.XAI_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
-    console.error('XAI_API_KEY is not set');
+    console.error('GROQ_API_KEY is not set');
     return res.status(500).json({ error: 'Chat service is not configured. Please try again later.' });
   }
 
@@ -27,14 +27,14 @@ ${CONTEXT}
 --- END CONTEXT ---`;
 
   try {
-    const response = await fetch('https://api.x.ai/v1/chat/completions', {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'grok-3-mini',
+        model: 'llama-3.3-70b-versatile',
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: message.trim() },
@@ -44,7 +44,7 @@ ${CONTEXT}
 
     if (!response.ok) {
       const errorBody = await response.text();
-      console.error('xAI API error:', response.status, errorBody);
+      console.error('Groq API error:', response.status, errorBody);
       return res.status(500).json({ error: 'Something went wrong. Please try again later.' });
     }
 
@@ -57,7 +57,7 @@ ${CONTEXT}
 
     return res.status(200).json({ reply });
   } catch (error) {
-    console.error('xAI API error:', error.message);
+    console.error('Groq API error:', error.message);
     return res.status(500).json({ error: 'Something went wrong. Please try again later.' });
   }
 };
