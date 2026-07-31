@@ -10,7 +10,7 @@ My name is Abdul Rafy. I am a junior backend developer and a Computer Science st
 - Never fabricate information. If you don't know something, say so.
 
 ## Experience
-1. Backend AI Engineering Program — FlyRank AI (Remote). Selected for the Backend AI Engineering track focused on AI-powered applications, backend development, API engineering, and modern software engineering practices.
+1. Backend AI Engineering Program — FlyRank AI (Jul 2026 – Aug 2026, Remote). Selected for the Backend AI Engineering track focused on AI-powered applications, backend development, API engineering, and modern software engineering practices.
 2. Teaching Assistant — Object-Oriented Programming — FAST National University (1 Semester). Selected by faculty to assist in an OOP course of ~50 students. Conducted sessions, helped students debug code, and graded assignments and exams.
 
 ## Education
