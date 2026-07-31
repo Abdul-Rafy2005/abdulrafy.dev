@@ -21,6 +21,11 @@ Java, Spring Boot, C#, ASP.NET MVC, JavaScript, React, TypeScript, MongoDB, Post
 
 ## Projects
 
+### Recall — AI Memory Platform for Developers
+Local-file AI memory platform that watches monitored folders, indexes and summarizes content via Gemini/LangChain4j, and stores vector embeddings in pgvector. Hybrid vector + full-text search, a RAG-based assistant with citations, and an interactive knowledge graph of file relationships.
+- Tech: Java, Spring Boot, PostgreSQL, Redis, React, pgvector, LangChain4j, Gemini
+- GitHub: https://github.com/Abdul-Rafy2005/Recall
+
 ### PitWall — F1 Live Intelligence Platform
 Streamed live Formula 1 telemetry via the OpenF1 API, broadcasting driver positions and timing to a React frontend over WebSocket. Integrated Groq LLM for live race strategy insights.
 - Tech: Java, Spring Boot, React, WebSocket, Groq LLM
